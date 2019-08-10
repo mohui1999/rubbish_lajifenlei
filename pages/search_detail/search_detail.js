@@ -14,9 +14,7 @@ Page({
   },
 
   back: function(){
-    wx.navigateBack({
-      text: that.data.searchValue,
-    });
+    wx.navigateBack();
   },
 
   /**
