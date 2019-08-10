@@ -1,0 +1,33 @@
+/* pages/search_detail/search_detail.wxss */
+
+
+.search-border{
+  display: flex;
+  height: 55rpx;
+  width: 670rpx;
+  margin: 40rpx;
+  background-color: white ;
+  border-radius: 40rpx;
+  border: 3rpx solid rgb(32, 235, 110);
+}
+
+.input_search{
+  flex: 1;
+  margin-left: 20rpx;
+  margin-top: 8rpx;
+}
+
+.search-text{
+  margin: 10rpx;
+}
+
+
+.detail-first{
+  margin: 40rpx;
+  border: 1px solid green;
+}
+
+.detail-head{
+  margin-top: 10rpx; 
+  display: flex;
+}

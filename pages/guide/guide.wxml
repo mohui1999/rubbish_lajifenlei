@@ -1,0 +1,8 @@
+<!--pages/guide/guide.wxml-->
+<view class="custom flex_center custom-back" style="padding-top:{{statusBarHeight}}px">
+  <view class="custom-text-con">
+    <text class="custom-text">垃圾分类指南</text>
+  </view>
+</view>
+<view class="empty_custom custom-back" style="padding-top:{{statusBarHeight}}px"></view>
+

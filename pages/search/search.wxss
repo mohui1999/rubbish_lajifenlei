@@ -1,0 +1,42 @@
+/* pages/search/search.wxss */
+page{
+  width: 750rpx;
+  background-image: url(http://xiemenglei.cn/wp-content/uploads/2019/08/background_home.png);
+  background-size: cover;
+}
+
+.search-container{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+}
+
+.search-con{
+  height: 65rpx;
+  width: 600rpx;
+  margin: 200rpx 75rpx 10rpx 75rpx;
+  padding: 5rpx;
+  background-color: white ;
+  border-radius: 40rpx;
+}
+
+.search-border{
+  display: flex;
+  height: 55rpx;
+  width: 588rpx;
+  margin: 5rpx;
+  background-color: white ;
+  border-radius: 40rpx;
+  border: 3rpx solid rgb(32, 235, 110);
+}
+
+.input_search{
+  flex: 1;
+  margin-left: 20rpx;
+  margin-top: 8rpx;
+}
+
+.search-text{
+  margin: 10rpx;
+}

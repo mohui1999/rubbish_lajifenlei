@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/search/search",
+    "pages/search_detail/search_detail",
+    "pages/guide/guide",
+    "pages/zixun/zixun"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "垃圾分类助手",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#0e932e",
+    "list": [
+      {
+        "pagePath": "pages/search/search",
+        "text": "查询",
+        "iconPath": "/imgs/icon/search.png",
+        "selectedIconPath": "/imgs/icon/search_select.png"
+      },
+      {
+        "pagePath": "pages/guide/guide",
+        "text": "指南",
+        "iconPath": "/imgs/icon/guide.png",
+        "selectedIconPath": "/imgs/icon/guide_select.png"
+      },
+      {
+        "pagePath": "pages/zixun/zixun",
+        "text": "资讯",
+        "iconPath": "/imgs/icon/zixun.png",
+        "selectedIconPath": "/imgs/icon/zixun_select.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
