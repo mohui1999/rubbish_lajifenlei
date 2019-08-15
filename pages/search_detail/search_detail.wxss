@@ -1,6 +1,12 @@
 /* pages/search_detail/search_detail.wxss */
-
-
+/*
+@font-face {
+font-family: 'zizhu';
+src: url("http://xiemenglei.cn/online/zizhu.ttf");
+font-weight: normal;
+font-style: normal;
+}
+*/
 .search-border{
   display: flex;
   height: 55rpx;
@@ -24,10 +30,31 @@
 
 .detail-first{
   margin: 40rpx;
-  border: 1px solid green;
+  border: 1px solid white;
+  border-radius: 20rpx;
 }
 
 .detail-head{
   margin-top: 10rpx; 
   display: flex;
+  text-align: center;
+}
+
+.detail-text1{
+  width: 50%;
+  font-size: 40rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.detail-text2{
+  font-size: 25rpx;
+  margin: 0rpx 30rpx 20rpx 30rpx;
+}
+
+.detail-text3{
+  font-size: 40rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  text-align: center;
 }

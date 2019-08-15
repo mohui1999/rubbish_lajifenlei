@@ -10,7 +10,7 @@
 <view class="search-border">
   <view class="input_search">
     <view class="">
-      <input placeholder="{{searchValue}}" type="text" focus='{{focused}}' confirm-type="search" value="{{searchValue}}" bindinput="onInput" bindconfirm='loadSearch' />
+      <input type="text" focus='{{focused}}' confirm-type="search" value="{{searchValue}}" bindinput="onInput" bindconfirm='loadSearch' />
     </view>
   </view>
   <view style="width: 50rpx" bindtap="loadSearch">
@@ -20,11 +20,26 @@
 
 <view class="detail-list">
   <view class="detail-success" wx:if="{{searchResult.code==200}}">
-    <view class="detail-first">
+    <view class="detail-first" style="background-color:{{color[searchResult.newslist[0].type]}}">
       <view class="detail-head">
-        <view>{{searchResult.newslist[0].name}}</view>
-        <view>{{class_list[searchResult.newslist[0].type]}}</view>
+        <view class="detail-text1">{{searchResult.newslist[0].name}}</view>
+        <view class="detail-text1">{{class_list[searchResult.newslist[0].type]}}</view>
+      </view>
+      <view class="detail-text2">【小知识】{{searchResult.newslist[0].explain}}</view>
+      <view class="detail-text2">【小贴士】{{searchResult.newslist[0].tip}}</view>
+    </view>
+    <view class="detail-first" wx:for="{{searchResult.newslist}}" wx:if="{{index!=0}}" data-index="{{index}}" style="background-color:{{color[item.type]}}">
+      <view class="detail-head" >
+        <view class="detail-text1">{{item.name}}</view>
+        <view class="detail-text1">{{class_list[item.type]}}</view>
       </view>
     </view>
   </view>
+
+  <view wx:if="{{searchResult.code==250}}">
+    <view class="detail-first" style="background-color:#d181f8">
+    <view class="detail-text3">垃圾星球寻找失败</view>
+    </view>
+  </view>
+
 </view>

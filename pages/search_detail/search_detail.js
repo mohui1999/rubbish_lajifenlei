@@ -10,7 +10,8 @@ Page({
     statusBarHeight: app.globalData.statusBarHeight,
     searchResult: [],
 
-    class_list: ["可回收垃圾", "有害垃圾", "厨余垃圾", "其他垃圾"]
+    class_list: ["可回收垃圾", "有害垃圾", "厨余垃圾", "其他垃圾"],
+    color: ["#00BFFF", "#FF6A6A", "#4EEE94","#f8fa29"]
   },
 
   back: function(){
