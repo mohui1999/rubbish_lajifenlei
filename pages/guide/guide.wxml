@@ -6,3 +6,16 @@
 </view>
 <view class="empty_custom custom-back" style="padding-top:{{statusBarHeight}}px"></view>
 
+<view class="guide-con">
+  <view class="guide-item" wx:for="{{rubbish_guide.result}}" wx:key="{{id}}" style="background-color:{{item.color}}">
+    <view class="guide-head">
+      <image class="guide-img" src="{{item.image}}"></image>
+      <view class="guide-title">{{item.name}}</view>
+    </view>
+    
+    <view class="guide-text">【小知识】{{item.explain}}</view>
+    <view class="guide-text">【小贴士】{{item.require}}</view>
+    <view class="guide-text">【常见物】{{item.common}}</view>
+  
+  </view>
+</view>

@@ -3,3 +3,34 @@
 page{
   width: 750rpx;
 }
+
+.guide-con{
+  margin: 20rpx 40rpx 10rpx 40rpx;
+  padding: 20rpx 10rpx;
+}
+
+.guide-item{
+  margin: 20rpx 10rpx;
+  border-radius: 15rpx;
+}
+
+.guide-head{
+  display: flex;
+  margin: 10rpx 20rpx;
+}
+
+.guide-img{
+  height: 100rpx;
+  width: 100rpx;
+}
+
+.guide-title{
+  font-size: 40rpx;
+  margin-top: 25rpx;
+  margin-left: 20rpx;
+}
+.guide-text{
+  margin: 10rpx 20rpx; 
+}
+
+

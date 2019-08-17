@@ -41,7 +41,7 @@ Page({
     var text = that.data.searchValue;
     wx.request({
       //调用接口获得当前信件详细内容
-      url: 'http://api.tianapi.com/txapi/lajifenlei/?key=367f6d1bd8e7cacbb14485af77f1ed6b&word=' + text,
+      url: 'https://api.tianapi.com/txapi/lajifenlei/?key=367f6d1bd8e7cacbb14485af77f1ed6b&word=' + text,
       method: 'GET',
       header: {
         'content-type': 'application/json'

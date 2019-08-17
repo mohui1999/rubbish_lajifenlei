@@ -27,12 +27,6 @@
         "text": "指南",
         "iconPath": "/imgs/icon/guide.png",
         "selectedIconPath": "/imgs/icon/guide_select.png"
-      },
-      {
-        "pagePath": "pages/zixun/zixun",
-        "text": "资讯",
-        "iconPath": "/imgs/icon/zixun.png",
-        "selectedIconPath": "/imgs/icon/zixun_select.png"
       }
     ]
   },

@@ -2,7 +2,7 @@
 <!--顶部状态栏-->
 <view class="custom flex_center" style="padding-top:{{statusBarHeight}}px">
   <view class="custom-text-con">
-    <text class="custom-text">垃圾分类智慧助手</text>
+    <text class="custom-text">垃圾分类智慧通</text>
   </view>
 </view>
 <view class="empty_custom" style="padding-top:{{statusBarHeight}}px"></view>
@@ -20,6 +20,17 @@
       <image src="/imgs/icon/search_home.png" bindtap="toResult" mode="aspectFit" style="height: 38rpx; width: 38rpx; margin-top: 10rpx;margin-right: 15rpx;"></image>
       </view>
     </view>
-
   </view>
+
+  <view class="hot">
+    <view style="margin-left:90rpx;padding: 4rpx;font-size: 30rpx;">猜你想搜：</view>
+    <view wx:for="{{hot[hotindex]}}" wx:key="{{index}}" class="hot-item" data-word="{{item}}" style="background-color:{{colorArrays[colorindex][index]}};" bindtap="towordReault">{{item}}</view>
+    <image src="/imgs/icon/reload.png" bindtap="toRefresh" mode="aspectFit" style="height: 38rpx; width: 38rpx; padding: 4rpx;margin-left: 10rpx;"></image>
+  </view>
+</view>
+
+<image class="img1" src="http://xiemenglei.cn/wp-content/uploads/2019/08/rubbish_text.png"></image>
+
+<view class="img2-con">
+<image class="img2" src="http://xiemenglei.cn/wp-content/uploads/2019/08/rubbish_cover.jpg"></image>
 </view>

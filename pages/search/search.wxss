@@ -40,3 +40,36 @@ page{
 .search-text{
   margin: 10rpx;
 }
+
+.img1{
+  width: 500rpx;
+  align-content: center;
+  align-self: center;
+  margin: 320rpx 125rpx 10rpx 125rpx;
+}
+
+.img2-con{
+  position: fixed;
+  z-index: 100;
+  bottom: -90rpx;
+}
+.img2{
+  width: 620rpx;
+  align-content: center;
+  align-self: center;
+  margin-left: 75rpx;
+  margin-right: 55rpx;
+}
+
+.hot{
+  display: flex;
+  margin-top: 15rpx;
+}
+
+.hot-item{
+  font-size: 30rpx;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+  padding: 4rpx;
+  border-radius: 10rpx;
+}
