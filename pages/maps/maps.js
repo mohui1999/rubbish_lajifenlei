@@ -69,7 +69,7 @@ Page({
         title: "旧衣物回收点",
         iconPath: '/imgs/maps/location_green.png',
         callout: {
-          content: " 分类垃圾桶\n 开放时间：全天\n 安徽大学家属宿舍158栋旁",
+          content: " 旧衣物回收点\n 开放时间：全天\n 安徽大学家属宿舍158栋旁",
           fontSize: 14,
           bgColor: "#FFF",
           borderWidth: 1,
@@ -85,7 +85,7 @@ Page({
         title: "旧衣物回收点",
         iconPath: '/imgs/maps/location_green.png',
         callout: {
-          content: " 分类垃圾桶\n 开放时间：全天\n 安徽大学家属宿舍与北门附近",
+          content: " 旧衣物回收点\n 开放时间：全天\n 安徽大学家属宿舍与北门附近",
           fontSize: 14,
           bgColor: "#FFF",
           borderWidth: 1,
@@ -157,6 +157,7 @@ Page({
   onLoad: function() {
     var _this = this;
     var that = this;
+    
 
     wx.getSystemInfo({
       success: function(res) {
@@ -170,26 +171,14 @@ Page({
           }
         })
 
-        console.log(that.data.view.Height);
-        console.log(that.data.view.windowWidth);
-        //var query = wx.createSelectorQuery();
-
-        //var query = wx.createSelectorQuery();
-        //query.select('#bottom-layout').boundingClientRect()
-        //query.exec(function (res) {
-        // console.log("res");
-        //console.log(res)
-        //bottomHeight = res[0].height;
-        //  that.setMapHeight();
-        // })
       }
     })
 
     wx.getLocation({
       type: 'gcj02', // 默认为 wgs84 返回 gps 坐标，gcj02 返回可用于 wx.openLocation 的坐标
       success: function(res) {
-        console.log(res.latitude);
-        console.log(res.longitude);
+        //console.log(res.latitude);
+        //console.log(res.longitude);
         var latitude = res.latitude
         var longitude = res.longitude
         _this.setData({
@@ -217,7 +206,7 @@ Page({
     var windowHeight = that.data.view.Height;
     console.log("设置控件")
     var controls = that.data.controls;
-    console.log(controls)
+    //console.log(controls)
 
     //设置控件的位置
     controls[0].position.left = windowWidth - 60;
@@ -227,8 +216,9 @@ Page({
     that.setData({
       controls: controls,
     })
-    console.log(controls)
-
+    console.log("开发工具上无法实现定位功能，请使用真机调试↑");
+    console.log("开发工具上无法实现定位功能，请使用真机调试↑");
+    console.log("开发工具上无法实现定位功能，请使用真机调试↑");
 
   },
 
@@ -243,7 +233,6 @@ Page({
     var windowWidth = that.data.windowWidth;
     var windowHeight = that.data.Height;
 
-    //设置中间部分指针
     /*
     that.setData({
       controls: [{
@@ -289,7 +278,7 @@ Page({
     var mapCtx = wx.createMapContext("mymap");
     mapCtx.getCenterLocation({
       success: function(res) {
-        console.log('getCenterLocation----------------------->');
+        console.log('getCenterLocation');
         console.log(res);
         that.updateCenterLocation(res.latitude, res.longitude);
         that.regeocodingAddress();
@@ -341,7 +330,6 @@ Page({
    */
   regeocodingAddress: function() {
     var that = this;
-    //不在发布页面，不进行逆地址解析，节省调用次数，腾讯未申请额度前一天只有10000次
     if (!that.data.showConfirm) {
       return;
     }
@@ -372,8 +360,6 @@ Page({
    */
   queryMarkerInfo: function() {
     var that = this;
-    console.log('查询当前坐标 marker 点信息')
-    //调用请求 marker 点的接口就好了
   },
 
   updateCenterLocation: function(latitude, longitude) {
