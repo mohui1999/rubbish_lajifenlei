@@ -3,8 +3,14 @@
     "pages/search/search",
     "pages/search_detail/search_detail",
     "pages/guide/guide",
-    "pages/zixun/zixun"
+    "pages/zixun/zixun",
+    "pages/maps/maps"
   ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序地图的效果展示" 
+    }
+  },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
@@ -27,6 +33,12 @@
         "text": "指南",
         "iconPath": "/imgs/icon/guide.png",
         "selectedIconPath": "/imgs/icon/guide_select.png"
+      },
+      {
+        "pagePath": "pages/maps/maps",
+        "text": "地图",
+        "iconPath": "/imgs/icon/map.png",
+        "selectedIconPath": "/imgs/icon/map_select.png"
       }
     ]
   },

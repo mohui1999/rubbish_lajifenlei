@@ -1,0 +1,23 @@
+<!--pages/maps/maps.wxml-->
+<view class="custom flex_center custom-back" style="padding-top:{{statusBarHeight}}px">
+  <view class="custom-text-con">
+    <text class="custom-text">垃圾投放点</text>
+  </view>
+</view>
+<view class="empty_custom custom-back" style="padding-top:{{statusBarHeight}}px"></view>
+
+
+
+<map id="mymap" 
+  longitude="{{longitude}}" 
+  latitude="{{latitude}}" 
+  scale="{{scale}}" 
+  bindcontroltap="controltap" 
+  markers="{{markers}}" 
+  circles="{{circles}}" 
+  bindmarkertap="markertap" 
+  bindregionchange="regionchange"
+  show-location="true"
+  show-scale="true"
+  style="width: 100%; height: {{view.Height}}px;"
+  controls="{{controls}}"></map>
